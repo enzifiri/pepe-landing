@@ -22,7 +22,7 @@ const CopyIcon = () => (
 const TokenomicsSection = () => {
   const tokenName = process.env.NEXT_PUBLIC_TOKEN_NAME || "WPEPE"
   const tokenomicsSubtitle = `Don't miss the chance, grab your ${tokenName} tokens now!`
-  const totalSupply = "676,602,254"
+  const totalSupply = process.env.NEXT_PUBLIC_TOTAL_SUPPLY || "676,602,254"
   const coinTicker = process.env.NEXT_PUBLIC_COIN_TICKER || "WPEPE"
   const symbol = `$${coinTicker}`
   const lpTokensText = "LP Tokens Are Burnt, And Contract Ownership Is Renounced."
