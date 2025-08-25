@@ -27,7 +27,7 @@ const TokenomicsSection = () => {
   const symbol = `$${coinTicker}`
   const lpTokensText = "LP Tokens Are Burnt, And Contract Ownership Is Renounced."
   const totalName = tokenName
-  const tokenAddress = "0x865331a601F129540b6F70a9FCA2Bd9Dd71de298"
+  const tokenAddress = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS || "0x865331a601F129540b6F70a9FCA2Bd9Dd71de298"
   const areYouReadyTitle = "ARE YOU READY?"
   const areYouReadyText = `Recently, many meme coins have emerged in the crypto space. These projects grow with the power of their communities and bring fun into the world of investing. Yet within this movement, there is a need for a true leader to stand out.
 Meme coins are not just about humor; they also provide utility and unity. They are creating a new culture within the crypto ecosystem. We believe in the power of communities and in the bright future of memes.`
